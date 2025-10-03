@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3cda26f165.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Binge-worthy-tv-sho-Squid-Game</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: black;
+      }
+
+      header {
+        display: flex;
+        background: black;
+        width: auto;
+      }
+
+      header ul {
+        margin: 45px 0;
+        padding: 10px 0;
+      }
+
+      header li {
+        display: inline;
+        margin: 15px 15px;
+        list-style: none;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: white;
+      }
+
+      header img {
+        width: 100px;
+        display: block;
+      }
+
+      header .container {
+        display: flex;
+      }
+
+      h2 {
+        margin-left: 20px;
+      }
+
+      .logo-img {
+        width: 190px;
+        height: auto;
+        display: block;
+        margin: 30px 60px 0 30px;
+      }
+
+      .logos {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .logos img {
+        aspect-ratio: 16/9;
+      }
+
+      .hero {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/615/original/squid-game-guards.jpeg?1707484320);
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 100%;
+        height: auto;
+        padding: 90px;
+      }
+
+      .hero-container {
+        background-color: rgba(40, 32, 32, 0.65);
+        color: white;
+        border-radius: 10px;
+        margin: 0 auto;
+        border: 2px solid grey;
+        font-size: 24px;
+        text-align: left;
+        max-width: 800px;
+      }
+
+      .hero-container:hover {
+        background-color: rgb(37, 35, 35);
+        opacity: 0.8;
+      }
+
+      .hero h1 {
+        font-size: 76px;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+
+      .hero h3 {
+        font-size: 24px;
+        letter-spacing: 5px;
+        margin: 0;
+        padding: 10px 30px;
+      }
+
+      .hero p {
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0 30px;
+      }
+
+      .hero a {
+        text-decoration: none;
+        color: white;
+        opacity: 0.8;
+      }
+
+      .hero a:hover {
+        font-weight: 900;
+        text-decoration: underline;
+        color: white;
+        opacity: 1;
+        text-transform: uppercase;
+      }
+
+      .hero-container-credits {
+        font-size: 16px;
+        opacity: 0.7;
+        padding: 0 0 0 30px;
+      }
+
+      .hero-container-credits a {
+        text-decoration: underline;
+      }
+
+      .btn-netflix-squid-game {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: rgb(39, 32, 68) !important;
+        text-transform: uppercase;
+        background: white;
+        text-decoration: none;
+        padding: 16px 32px;
+        border-radius: 30px;
+        width: 25%;
+        transition: all 200ms ease-in;
+      }
+
+      .btn-netflix-squid-game:hover {
+        background-color: black;
+        color: red !important;
+        text-decoration: none !important;
+        border: 1px solid white;
+      }
+
+      .about-links {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .about-links a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .about-btn {
+        display: block;
+        margin: 30px 0 10px 0;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        background: rgb(154, 151, 151);
+        padding: 16px 40px;
+        border-radius: 30px;
+        transition: all 200ms ease-in;
+      }
+
+      .about-btn:hover {
+        background: white;
+      }
+
+      .top-netflix-logo {
+        margin-top: 20px;
+        width: 160px;
+        height: auto;
+      }
+
+      .section-primary h2 {
+        color: red;
+        letter-spacing: 2px;
+      }
+
+      .grid-3-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        border: 10px solid black;
+      }
+
+      .grid-2-columns {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 20px;
+        border: 10px solid black;
+      }
+
+      .video {
+        display: block;
+        aspect-ratio: 16/9;
+      }
+
+      .squid-game-logo {
+        width: 120px;
+        padding: 0 15px;
+        margin-top: 10px;
+        margin-left: 5px;
+      }
+
+      .squid-game-logo-large {
+        display: none;
+      }
+
+      .squid-games-challenges {
+        background: black;
+        color: white;
+        padding: 25px 0 0 40px;
+        font-size: 20px;
+        text-align: left;
+        width: 100%;
+      }
+
+      .squid-games-challenges h2 {
+        color: red;
+        text-align: left;
+        padding: 5px 0 0 5px;
+      }
+
+      .squid-games-challenges ul {
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      .squid-games-challenges a {
+        color: red;
+      }
+
+      .card {
+        border: 2px solid rgb(202, 199, 199);
+        border-radius: 3px;
+      }
+
+      .card-body {
+        padding: 20px 20px 10px 30px;
+        color: white;
+        background: black;
+        font-size: 14px;
+        opacity: 0.7;
+      }
+
+      .card-img-responsive {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16/9;
+      }
+
+      .card em {
+        color: red;
+        font-size: 16px;
+      }
+
+      .the-squid-game-img {
+        margin: 10px 120px 10px 0;
+        border-radius: 5px;
+        border: 3px solid lightgrey;
+      }
+
+      .show-information {
+        display: flex;
+        justify-content: right;
+      }
+
+      .trailer-embeds {
+        background: black;
+      }
+
+      .trailer-embeds h2 {
+        color: red;
+        text-align: left;
+        padding: 20px 0 0 45px;
+      }
+      .trailer-embeds iframe {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        border: 5px solid black;
+      }
+
+      .footer-credits {
+        text-align: center;
+        margin: 30px 0 20px 0;
+        font-size: 16px;
+        opacity: 0.5;
+        color: white;
+        letter-spacing: 2px;
+        font-family: fantasy;
+      }
+      .bottom-netflix-logo {
+        display: none;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 960px) {
+        h1,
+        h2,
+        h3 {
+          text-align: center !important;
+        }
+
+        .squid-game-logo-large {
+          display: block;
+          margin: 0 auto;
+          padding: 0 100px;
+          width: 200px;
+          border: 5px solid white;
+          border-radius: 20px;
+        }
+
+        .squid-game-logo {
+          display: none;
+        }
+        .hero {
+          padding: 60px 0;
+        }
+        .squid-games-challenges {
+          display: none;
+        }
+
+        .header-container {
+          display: none;
+        }
+        .top-netflix-logo {
+          display: none;
+        }
+        .hero-container {
+          display: block;
+          margin: 0 auto;
+          padding: 60px 0;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+          grid-gap: 10px;
+        }
+
+        .the-squid-game-img {
+          display: none;
+        }
+
+        .card-body {
+          display: block;
+          margin: 0 auto;
+          text-align: center;
+          padding: 10px;
+        }
+        .card img {
+          display: none;
+        }
+        .section-primary {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .about-links {
+          display: block;
+          margin: 0 auto;
+        }
+
+        .about-btn {
+          display: block;
+          margin: 10px auto;
+          width: 200px;
+        }
+        iframe {
+          display: block;
+          margin: 0 auto;
+          aspect-ratio: 4/3;
+        }
+        section .logos img {
+          display: block;
+          margin: 0 auto;
+          aspect-ratio: 4/3;
+        }
+        .card {
+          border: none;
+        }
+        .final-section {
+          display: none;
+        }
+
+        .bottom-netflix-logo {
+          display: block;
+          margin: 0 auto;
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <a href="https://www.imdb.com/title/tt10919420/" target="_blank">
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/665/original/squid-game-logo-white.png?1707501668"
+              alt="squid-game-black-logo"
+              class="squid-game-logo"
+            />
+          </a>
+          />
+
+          <ul>
+            <li>2021</li>
+            <li>|</li>
+            <li>Ages 15+</li>
+            <li>|</li>
+            <li>Drama</li>
+            <li>|</li>
+            <li>Mystery</li>
+            <li>|</li>
+            <li>Season 1</li>
+            <li>|</li>
+            <li>9 Episodes</li>
+          </ul>
+
+          <a href="https://www.netflix.com/gb/" target="_blank">
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/711/original/netflix-logo.png?1707522587netflix-logo"
+              alt="Netflix logo"
+              class="top-netflix-logo"
+            />
+          </a>
+        </div>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/665/original/squid-game-logo-white.png?1707501668"
+          alt="Large Squid Game logo "
+          class="squid-game-logo-large"
+          title="Large Squid Game Logo"
+        />
+      </header>
+    </div>
+    <div class="hero">
+      <div class="hero-container">
+        <h3>Plot Synopsis</h3>
+        <div>
+          <p>
+            Hoping to win easy money, a broke and desperate Gi-hun agrees to
+            take part in an enigmatic game with other participants who have also
+            failed at life for various reasons. Each is hopeful to win the more
+            than 38 million US dollar prize, but not long into the first round,
+            unforeseen horrors unfold. Set on an isolated island the
+            participants are locked up until there is a final winner. The story
+            incorporates popular Korean children's games from the 1970s and
+            1980s, such as squid game, but not all games are innocent...
+          </p>
+          <div class="hero-container-credits">
+            <div>
+              <em>
+                Staring:
+                <a
+                  href="https://www.imdb.com/name/nm0497631/?ref_=ttfc_fc_cl_t1"
+                  target="_blank"
+                  >Lee Jung-jar</a
+                >,
+                <a
+                  href="https://www.imdb.com/name/nm7676537/?ref_=ttfc_fc_cl_t2"
+                  target="_blank"
+                >
+                  Park Hae-soo </a
+                >,
+                <a
+                  href="https://www.imdb.com/name/nm9665672/?ref_=ttfc_fc_cl_t7"
+                  target="_blank"
+                >
+                  Wi Ha-jun</a
+                >
+              </em>
+            </div>
+            <em>
+              Creators:
+              <a
+                href="https://www.imdb.com/name/nm1375363/?ref_=ttfc_fc_dr1"
+                target="_blank"
+                >Hwang Dong-hyuk</a
+              >
+            </em>
+          </div>
+          <a
+            href="https://www.netflix.com/title/81040344"
+            target="_blank"
+            title="Netflic Squid Games TV Series"
+            class="btn btn-netflix-squid-game"
+            >Start watching <i class="fa-regular fa-circle-play"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <section class="about-show-links">
+      <div class="about-links">
+        <div>
+          <a
+            href="https://m.imdb.com/title/tt10919420/fullcredits/cast"
+            target="_blank"
+            class="about-btn"
+            >Full Cast List</a
+          >
+        </div>
+        <div>
+          <a href="#section-primary" class="about-btn">Jump to Episodes</a>
+        </div>
+        <div>
+          <a
+            href="https://www.rottentomatoes.com/tv/squid_game/s01/reviews"
+            target="_blank"
+            class="about-btn"
+            >Reviews</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="section-primary" id="section-primary">
+      <h2>Season 1 | 9 Episodes</h2>
+      <div class="grid grid-3-columns">
+        <div class="card">
+          <div>
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/054/original/episode-1.jpeg?1707733666"
+              class="card-img-responsive"
+              alt="episode-1-img"
+              title="Episode 1 - Red light, Green light"
+            />
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-circle-info"></i>
+            E01 |
+            <em>Red Light, Green Light </em>
+            <p>
+              Hoping to win easy money, a desperate Gi-hun agrees to take part
+              in an enigmatic game; not long into the first round, unforeseen
+              horrors unfold.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/056/original/episode-2.jpeg?1707733947"
+              class="card-img-responsive"
+              alt="episode-2-img"
+              title="Episode 2 - Hell"
+            />
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-circle-info"></i> E02 | <em> Hell </em>
+            <p>
+              Split on whether to continue or quit, the group holds a vote;
+              their realities in the outside world may prove to be just as
+              unforgiving as the game.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/057/original/episode-3.jpeg?1707734217"
+              class="card-img-responsive"
+              alt="episode-3-img"
+              title="Episode 3 - The Man with the Umbrella"
+            />
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-circle-info"></i>
+            E03 |
+            <em> The Man with The Umbrella </em>
+            <p>
+              A few players enter the next round, which promises equal doses of
+              sweet and deadly; Jun-ho takes the opportunity to sneak his way
+              inside.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/059/original/episode-4.jpeg?1707734571"
+              class="card-img-responsive"
+              alt="episode-4-img"
+              title="Stick to the Team"
+            />
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-circle-info"></i>
+            E04 |
+            <em>Stick to The Team </em>
+            <p>
+              As alliances form among the players, no one is safe in the
+              dormitory after lights out; the third game challenges Gi-hun's
+              team to think strategically.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/060/original/episode-5.jpeg?1707734588"
+              class="card-img-responsive"
+              alt="episode-5-img"
+              title="Episode 5 - A Fair World"
+            />
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-circle-info"></i>
+            E05 |
+            <em>A Fair World </em>
+            <p>
+              Gi-hun and his team take turns keeping guard through the night and
+              the masked men encounter trouble with their co-conspirators.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/061/original/episode-6.jpeg?1707734601"
+              class="card-img-responsive"
+              alt="episode-6-img"
+              title="Episode 6 - Ganbu"
+            />
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-circle-info"></i> E06 | <em>Ganbu </em>
+            <p>
+              Players pair off for the fourth game; Gi-hun grapples with a moral
+              dilemma; Sang-woo chooses self-preservation; Sae-byeok shares her
+              untold story.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/062/original/episode-7.jpeg?1707734617"
+              class="card-img-responsive"
+              alt="episode-7-img"
+              title="Episode 7 - VIPs"
+            />
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-circle-info"></i> E07 | <em>VIPs </em>
+            <p>
+              The Masked Leader welcomes VIP guests to the facility for a
+              front-row viewing of the show; in the fifth game, some players
+              crack under the pressure.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/063/original/episode-8.jpeg?1707734635"
+              class="card-img-responsive"
+              alt="episode-8-img"
+              title="Episode 8 - Front Man"
+            />
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-circle-info"></i> E08 | <em>Front Man </em>
+            <p>
+              Ahead of the last round, distrust and disgust run deep among the
+              finalists; Jun-ho makes a getaway, determined to expose the game's
+              secrets.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/064/original/episode-9.jpeg?1707734649"
+              class="card-img-responsive"
+              alt="episode-9-img"
+              title="Episode 9 - One Lucky Day"
+            />
+          </div>
+          <div class="card-body">
+            <i class="fa-solid fa-circle-info"></i>
+            E09 |
+            <em>One Lucky Day</em>
+            <p>
+              The final round presents another cruel test, but, this time, how
+              it ends depends on just one player; the game's creator steps out
+              of the shadows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="grid squid-games-challenges">
+      <div class="grid grid-2-columns">
+        <div>
+          <h2>The challenges</h2>
+          <ul>
+            <li>
+              Red light, green light -
+              <a
+                href="https://www.wikihow.com/Play-Red-Light-Green-Light"
+                target="_blank"
+                ><em>mugunghwa kkochi pieotseumnida</em></a
+              >
+            </li>
+            <li>
+              Honeycomb -
+              <a
+                href="https://www.nomss.com/squid-game-honeycomb-candy-dalgona/#netflixs-squid-game"
+                target="_blank"
+              >
+                <em>dalgona</em></a
+              >
+            </li>
+            <li>
+              Tug of war -
+              <a href="https://en.wikipedia.org/wiki/Juldarigi" target="_blank"
+                ><em>juldarigi</em></a
+              >
+            </li>
+            <li>
+              Marbles -
+              <a
+                href="https://simple.wikipedia.org/wiki/Marbles_(game)"
+                target="_blank"
+                ><em>holjjang</em></a
+              >
+            </li>
+            <li>
+              Glass tiles/bridge -
+              <a
+                href="http://www.english-time.eu/for-teachers/activity/67-stepping-stones-classroom-game/#:~:text=One%20by%20one%20the%20children,the%20game%20for%20one%20round."
+                target="_blank"
+              >
+                <em>jinggeom dari geonnagi</em></a
+              >
+            </li>
+            <li>
+              FINAL - Squid game -
+              <a
+                href="https://en.wikipedia.org/wiki/Squid_(game)"
+                target="_blank"
+                ><em>Ojingeo nori</em></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/963/original/squid-game-the-game.jpeg?1707675386"
+            alt="Korean Squid Game image"
+            title="Korean Squid Game"
+            class="the-squid-game-img"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="trailer-embeds">
+        <h2>Short clips</h2>
+        <div class="grid grid-3-columns reel-borders">
+          <iframe
+            src="https://www.youtube.com/embed/sH4Y450PSVM?si=Zr-07g19ujpEMBzh&amp;start=3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="video"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/2TJxTysByZ8?si=_yY3M7qTaVDVbpR0&amp;start=3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="video"
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/wxJT1shoo38?si=OJNXZY9_AAtekUvH&amp;start=3"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="video"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="final-section">
+      <div class="logos">
+        <a href="https://www.netflix.com/gb/" target="_blank">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/711/original/netflix-logo.png?1707522587netflix-logo"
+            alt="Netflix logo"
+            title="Netflix logo"
+            class="netflix-logo"
+          />
+        </a>
+
+        <img
+          src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/712/original/squid-game-red-light-game.jpeg?1707523082"
+          alt="red-light-green-light-challenge"
+          title="red-light-green-light-challenge"
+        />
+        <img
+          src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/713/original/squid-game-cookie-challenge.jpeg?1707523190"
+          alt="honeycomb-challenge"
+          title="honeycomb-challenge"
+        />
+        <a href="https://www.imdb.com/title/tt10919420/" target="_blank">
+          <img
+            src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/665/original/squid-game-logo-white.png?1707501668"
+            alt="squid-game-logo"
+            class="logo-img"
+          />
+        </a>
+      </div>
+    </section>
+    <footer>
+      <img
+        src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/711/original/netflix-logo.png?1707522587netflix-logo"
+        alt="Netflix logo"
+        class="bottom-netflix-logo"
+      />
+    </footer>
+    <div class="footer-credits">
+      Coded by Alicia Fletcher for the SheCodes TV Show Challenge
+      <i class="fa-solid fa-tv"></i>
+    </div>
+  </body>
+</html>
